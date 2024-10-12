@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Create a new Discord client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
+const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 // Create a collection to store commands
 client.commands = new Collection();
@@ -16,7 +16,7 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 for (const file of commandFiles) {
     const filePath = path.join(commandsPath, file);
     const command = require(filePath);
-    client.commands.set(command.name, command);
+    client.commands.set(command.data.name, command);
 }
 
 // Event that runs when the bot connects to the server
@@ -24,26 +24,19 @@ client.once('ready', () => {
     console.log('Bot is online and ready to watch over SCP Discord Server!!');
 });
 
-// Listen for new messages and respond to specific commands
-client.on('messageCreate', async (message) => {
-    if (message.author.bot) return; // Ignore bot messages
+// Listen for interactions (slash commands)
+client.on('interactionCreate', async (interaction) => {
+    if (!interaction.isCommand()) return;
 
-    const prefix = '!'; // Change this to your preferred prefix
-    if (!message.content.startsWith(prefix)) return;
+    const command = client.commands.get(interaction.commandName);
 
-    const args = message.content.slice(prefix.length).trim().split(/ +/);
-    const commandName = args.shift().toLowerCase();
-
-    // Check if the command exists
-    const command = client.commands.get(commandName);
     if (!command) return;
 
     try {
-        // Execute the command
-        await command.execute(message, args);
+        await command.execute(interaction);
     } catch (error) {
         console.error(error);
-        message.reply('There was an error executing that command.');
+        await interaction.reply({ content: 'There was an error executing that command!', ephemeral: true });
     }
 });
 
