@@ -2,9 +2,12 @@ require('dotenv').config();
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
+const { startPromotionTracking } = require('./logging/promotions-logging'); // Updated path to promotions-logging.js
 
 // Create a new Discord client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const client = new Client({
+    intents: [GatewayIntentBits.Guilds]
+});
 
 // Create a collection to store commands
 client.commands = new Collection();
@@ -22,6 +25,10 @@ for (const file of commandFiles) {
 // Event that runs when the bot connects to the server
 client.once('ready', () => {
     console.log('Bot is online and ready to watch over SCP Discord Server!!');
+
+    // Start tracking Roblox promotions
+    const CHANNEL_ID = process.env.DISCORD_CHANNEL_ID; // Use channel ID from environment variables
+    startPromotionTracking(client, CHANNEL_ID); // Start the promotion tracking functionality
 });
 
 // Listen for interactions (slash commands)

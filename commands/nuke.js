@@ -45,9 +45,9 @@ module.exports = {
         // Create buttons for options
         const buttons = new ActionRowBuilder()
             .addComponents(
-                new ButtonBuilder().setCustomId('delete_single').setLabel('Delete Single Channel').setStyle(ButtonStyle.Danger),
-                new ButtonBuilder().setCustomId('delete_multiple').setLabel('Delete Multiple Channels').setStyle(ButtonStyle.Danger),
-                new ButtonBuilder().setCustomId('delete_except').setLabel('Delete All Except Specific Channels').setStyle(ButtonStyle.Danger),
+                new ButtonBuilder().setCustomId('delete_single').setLabel('Delete Single Channel').setStyle(ButtonStyle.Secondary),
+                new ButtonBuilder().setCustomId('delete_multiple').setLabel('Delete Multiple Channels').setStyle(ButtonStyle.Secondary),
+                new ButtonBuilder().setCustomId('delete_except').setLabel('Delete All Except Specific Channels').setStyle(ButtonStyle.Secondary),
                 new ButtonBuilder().setCustomId('delete_all').setLabel('Delete All Channels (Critical)').setStyle(ButtonStyle.Danger)
             );
 

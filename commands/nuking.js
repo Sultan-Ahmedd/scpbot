@@ -1,7 +1,7 @@
 const { SlashCommandBuilder, EmbedBuilder, PermissionsBitField } = require('discord.js');
 
 // In-memory state for nuking
-let nukingEnabled = true;
+let nukingEnabled = false;
 
 module.exports = {
     data: new SlashCommandBuilder()
