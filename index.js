@@ -2,7 +2,7 @@ require('dotenv').config();
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
-const { startPromotionTracking } = require('./logging/promotions-logging'); // Updated path to promotions-logging.js
+const { startPromotionTracking } = require('./logging/promotions-logging');
 
 // Create a new Discord client instance
 const client = new Client({
@@ -18,8 +18,20 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 
 for (const file of commandFiles) {
     const filePath = path.join(commandsPath, file);
-    const command = require(filePath);
-    client.commands.set(command.data.name, command);
+    
+    try {
+        const command = require(filePath);
+
+        if (!command.data || !command.data.name) {
+            console.error(`Error: Command file ${file} is missing 'data' or 'name' property.`);
+            continue; // Skip this file as it's not correctly configured
+        }
+
+        client.commands.set(command.data.name, command);
+        console.log(`Loaded command: ${file}`);
+    } catch (error) {
+        console.error(`Error loading command file: ${file}`, error);
+    }
 }
 
 // Event that runs when the bot connects to the server

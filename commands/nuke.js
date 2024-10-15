@@ -1,8 +1,5 @@
 const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, PermissionsBitField, ModalBuilder, TextInputBuilder, TextInputStyle, EmbedBuilder } = require('discord.js');
-
-// In-memory storage for nuke permissions and state
-let allowedRoles = [];
-let nukingEnabled = true; // Default is enabled
+const { loadNukeState } = require('../utils/stateManager');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -10,8 +7,11 @@ module.exports = {
         .setDescription('Nuke command with four options for deleting channels'),
 
     async execute(interaction) {
+        // Load the current nuking state
+        let nukeState = loadNukeState();
+
         // Check if nuking is enabled
-        if (!nukingEnabled) {
+        if (!nukeState.nukingEnabled) {
             const errorEmbed = new EmbedBuilder()
                 .setColor(0xff0000)
                 .setTitle('Nuking Disabled')
@@ -20,8 +20,7 @@ module.exports = {
         }
 
         // Check if user has an allowed role or is an admin
-        if (!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator) &&
-            !interaction.member.roles.cache.some(role => allowedRoles.includes(role.id))) {
+        if (!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
             const errorEmbed = new EmbedBuilder()
                 .setColor(0xff0000)
                 .setTitle('Permission Denied')
@@ -29,7 +28,7 @@ module.exports = {
             return interaction.reply({ embeds: [errorEmbed], ephemeral: true });
         }
 
-        // Create the embed message
+        // Create the embed message and buttons (the rest of the code remains unchanged)
         const embed = new EmbedBuilder()
             .setColor(0x3498db)
             .setTitle('Nuke Command')
@@ -42,7 +41,6 @@ module.exports = {
             )
             .setFooter({ text: 'Choose wisely, some options are irreversible.' });
 
-        // Create buttons for options
         const buttons = new ActionRowBuilder()
             .addComponents(
                 new ButtonBuilder().setCustomId('delete_single').setLabel('Delete Single Channel').setStyle(ButtonStyle.Secondary),

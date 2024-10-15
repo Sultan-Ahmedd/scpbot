@@ -1,7 +1,5 @@
-const { SlashCommandBuilder, EmbedBuilder, PermissionsBitField } = require('discord.js');
-
-// In-memory state for nuking
-let nukingEnabled = false;
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { loadNukeState, saveNukeState } = require('../utils/stateManager');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -24,15 +22,20 @@ module.exports = {
             return interaction.reply({ embeds: [errorEmbed], ephemeral: true });
         }
 
+        // Load the current nuking state
+        let nukeState = loadNukeState();
+
         if (interaction.options.getSubcommand() === 'enable') {
-            nukingEnabled = true;
+            nukeState.nukingEnabled = true;
+            saveNukeState(nukeState);
             const successEmbed = new EmbedBuilder()
                 .setColor(0x00ff00)
                 .setTitle('Nuking Enabled')
                 .setDescription('Nuking has been enabled on this server.');
             return interaction.reply({ embeds: [successEmbed], ephemeral: true });
         } else if (interaction.options.getSubcommand() === 'disable') {
-            nukingEnabled = false;
+            nukeState.nukingEnabled = false;
+            saveNukeState(nukeState);
             const successEmbed = new EmbedBuilder()
                 .setColor(0xff0000)
                 .setTitle('Nuking Disabled')
