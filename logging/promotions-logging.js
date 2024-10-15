@@ -64,40 +64,9 @@ async function sendRankChangeMessage(client, channelId, userId, username, oldRan
     }
 }
 
-// Function to send exile message to Discord with embed
-async function sendExileMessage(client, channelId, userId, username, actionBy, actionById, timestamp) {
-    try {
-        const channel = client.channels.cache.get(channelId);
-        if (!channel) {
-            console.error(`Channel ID ${channelId} not found in Discord. Ensure the bot has access to this channel.`);
-            return;
-        }
-
-        // Fetch user avatar
-        const avatarUrl = await getUserAvatar(userId);
-
-        // Create the embed message for exile
-        const embed = new EmbedBuilder()
-            .setColor(0xff0000) // Red for exile
-            .setTitle('Exile')
-            .setDescription(`${username} has been exiled from the group.`)
-            .addFields(
-                { name: 'Action Performed By', value: `${actionBy} (Roblox ID: ${actionById})`, inline: true },
-                { name: 'Timestamp', value: new Date(timestamp).toLocaleString(), inline: true }
-            )
-            .setThumbnail(avatarUrl || 'https://www.roblox.com/images/default_avatar.png') // Use default avatar if not found
-            .setFooter({ text: `Roblox ID: ${userId}` });
-
-        await channel.send({ embeds: [embed] });
-        console.log(`Sent exile message for ${username} to channel ${channelId}.`);
-    } catch (error) {
-        console.error(`Error sending exile message to Discord channel ${channelId}:`, error.message);
-    }
-}
-
-// Function to fetch the audit logs for rank changes (promotions/demotions) and exiles, with retries
+// Function to fetch the audit logs for rank changes (promotions/demotions)
 async function getAuditLogs(cursor = '', retryCount = 0) {
-    const url = `https://groups.roblox.com/v1/groups/${groupId}/audit-log?actionType=ChangeRank,Exile&limit=100${cursor ? `&cursor=${cursor}` : ''}`;
+    const url = `https://groups.roblox.com/v1/groups/${groupId}/audit-log?actionType=ChangeRank&limit=100${cursor ? `&cursor=${cursor}` : ''}`;
     const delay = Math.pow(2, retryCount) * 1000; // Exponential backoff: 1s, 2s, 4s, 8s...
 
     try {
@@ -130,12 +99,16 @@ async function getAuditLogs(cursor = '', retryCount = 0) {
 // Function to create a unique identifier for each log entry
 function createLogEntryId(logEntry) {
     const { description, created } = logEntry;
+    if (!description || !description.TargetId) {
+        console.error(`Log entry missing necessary information: ${JSON.stringify(logEntry)}`);
+        return null; // Return null if necessary data is missing
+    }
     return `${description.TargetId}-${new Date(created).getTime()}`;
 }
 
-// Function to track promotions, demotions, and exiles using the audit logs (with pagination)
-async function trackPromotionsDemotionsAndExiles(client, channelId, cursor = '') {
-    console.log('Checking audit logs for promotions, demotions, and exiles...');
+// Function to track promotions and demotions using the audit logs (with pagination)
+async function trackPromotionsAndDemotions(client, channelId, cursor = '') {
+    console.log('Checking audit logs for promotions and demotions...');
     const auditLogs = await getAuditLogs(cursor);
     if (!auditLogs) return;
 
@@ -157,6 +130,7 @@ async function trackPromotionsDemotionsAndExiles(client, channelId, cursor = '')
 
         // Create a unique identifier for the log entry
         const logEntryId = createLogEntryId(logEntry);
+        if (!logEntryId) continue; // Skip if ID creation failed
 
         // Ensure we don't process the same log entry more than once
         if (processedLogs.has(logEntryId)) {
@@ -164,19 +138,13 @@ async function trackPromotionsDemotionsAndExiles(client, channelId, cursor = '')
             continue;
         }
 
-        if (actionType === 'ChangeRank') {
-            const oldRankName = description.OldRoleSetName || 'Unknown';
-            const newRankName = description.NewRoleSetName || 'Unknown';
+        // Determine if it was a promotion or demotion
+        const oldRankName = description.OldRoleSetName || 'Unknown';
+        const newRankName = description.NewRoleSetName || 'Unknown';
+        const type = description.NewRoleSetId > description.OldRoleSetId ? 'promotion' : 'demotion';
 
-            // Determine if it was a promotion or demotion
-            const type = description.NewRoleSetId > description.OldRoleSetId ? 'promotion' : 'demotion';
-
-            // Log the promotion/demotion to Discord
-            await sendRankChangeMessage(client, channelId, description.TargetId, target, oldRankName, newRankName, actionBy, actionById, created, type);
-        } else if (actionType === 'Exile') {
-            // Log the exile to Discord
-            await sendExileMessage(client, channelId, description.TargetId, target, actionBy, actionById, created);
-        }
+        // Log the promotion/demotion to Discord
+        await sendRankChangeMessage(client, channelId, description.TargetId, target, oldRankName, newRankName, actionBy, actionById, created, type);
 
         // Mark the log entry as processed and store it in the JSON file
         processedLogs.add(logEntryId);
@@ -185,26 +153,26 @@ async function trackPromotionsDemotionsAndExiles(client, channelId, cursor = '')
 
     // Continue with pagination if there is a next page (cursor)
     if (auditLogs.nextPageCursor) {
-        await trackPromotionsDemotionsAndExiles(client, channelId, auditLogs.nextPageCursor); // Recursive call for next page
+        await trackPromotionsAndDemotions(client, channelId, auditLogs.nextPageCursor); // Recursive call for next page
     } else {
         console.log('All audit logs have been processed.');
     }
 }
 
-// Function to repeatedly track promotions, demotions, and exiles (polling)
-async function pollPromotionsDemotionsAndExiles(client, channelId) {
+// Function to repeatedly track promotions and demotions (polling)
+async function pollPromotionsAndDemotions(client, channelId) {
     try {
-        await trackPromotionsDemotionsAndExiles(client, channelId);
+        await trackPromotionsAndDemotions(client, channelId);
     } catch (error) {
-        console.error(`Failed to track promotions/demotions/exiles: ${error.message}`);
+        console.error(`Failed to track promotions/demotions: ${error.message}`);
     }
-    setTimeout(() => pollPromotionsDemotionsAndExiles(client, channelId), 30000); // Poll every 30 seconds
+    setTimeout(() => pollPromotionsAndDemotions(client, channelId), 30000); // Poll every 30 seconds
 }
 
-// Start the bot to track promotions/demotions/exiles continuously
+// Start the bot to track promotions and demotions continuously
 async function startPromotionTracking(client, channelId) {
-    console.log('Starting audit log tracking for promotions, demotions, and exiles...');
-    await pollPromotionsDemotionsAndExiles(client, channelId);
+    console.log('Starting audit log tracking for promotions and demotions...');
+    await pollPromotionsAndDemotions(client, channelId);
 }
 
 module.exports = { startPromotionTracking };

@@ -118,6 +118,23 @@ module.exports = {
     }
 };
 
+// Function to create and show the modal
+async function showModalForChannelId(interaction, modalId, label) {
+    const modal = new ModalBuilder()
+        .setCustomId(modalId)
+        .setTitle('Nuke Command Input')
+        .addComponents(
+            new ActionRowBuilder().addComponents(
+                new TextInputBuilder()
+                    .setCustomId('channelInput')
+                    .setLabel(label)
+                    .setStyle(TextInputStyle.Short)
+            )
+        );
+
+    await interaction.showModal(modal);
+}
+
 // Handle single channel deletion
 async function handleSingleChannelDeletion(interaction, channelId) {
     const channel = interaction.guild.channels.cache.get(channelId);
@@ -142,4 +159,4 @@ async function handleSingleChannelDeletion(interaction, channelId) {
     }
 }
 
-// Add similar handler functions for `handleMultipleChannelDeletion`, `handleAllExceptChannelsDeletion`, `handleDeleteAllChannels`, and the modal creation function `showModalForChannelId`.
+// Add similar handler functions for `handleMultipleChannelDeletion`, `handleAllExceptChannelsDeletion`, and `handleDeleteAllChannels`.
