@@ -1,0 +1,1723 @@
+{
+  "roles": [
+    {
+      "name": "Class E",
+      "permissions": "0",
+      "color": 5917732,
+      "position": 123
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 181
+    },
+    {
+      "name": "Updates Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 82
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 157
+    },
+    {
+      "name": "Admin",
+      "permissions": "8",
+      "color": 0,
+      "position": 34
+    },
+    {
+      "name": "[Internal Tribunal Department]",
+      "permissions": "0",
+      "color": 9820853,
+      "position": 134
+    },
+    {
+      "name": "[FSD] Senior Moderator",
+      "permissions": "0",
+      "color": 5915635,
+      "position": 145
+    },
+    {
+      "name": "Community Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 107
+    },
+    {
+      "name": "[Internal Tribunal Department]",
+      "permissions": "0",
+      "color": 9820853,
+      "position": 83
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 70
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 248
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 223
+    },
+    {
+      "name": "Studio Leadership",
+      "permissions": "0",
+      "color": 2299445,
+      "position": 88
+    },
+    {
+      "name": "CLEARANCE LEVEL 2",
+      "permissions": "0",
+      "color": 9489594,
+      "position": 63
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 229
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 187
+    },
+    {
+      "name": "Community Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 9
+    },
+    {
+      "name": "Council Chairman",
+      "permissions": "8",
+      "color": 5574299,
+      "position": 106
+    },
+    {
+      "name": "Admin",
+      "permissions": "8",
+      "color": 0,
+      "position": 122
+    },
+    {
+      "name": "[Internal Tribunal Department]",
+      "permissions": "0",
+      "color": 9820853,
+      "position": 206
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 209
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 156
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 227
+    },
+    {
+      "name": "[Ethics Committee]",
+      "permissions": "0",
+      "color": 1802242,
+      "position": 116
+    },
+    {
+      "name": "CLEARANCE LEVEL 1",
+      "permissions": "0",
+      "color": 10206900,
+      "position": 190
+    },
+    {
+      "name": "[Fire Suppression Department]",
+      "permissions": "0",
+      "color": 11027200,
+      "position": 92
+    },
+    {
+      "name": "CLEARANCE LEVEL 2",
+      "permissions": "0",
+      "color": 9489594,
+      "position": 196
+    },
+    {
+      "name": "The Administrator",
+      "permissions": "0",
+      "color": 2494559,
+      "position": 146
+    },
+    {
+      "name": "The Administrator",
+      "permissions": "0",
+      "color": 2494559,
+      "position": 144
+    },
+    {
+      "name": "Engineer",
+      "permissions": "0",
+      "color": 5394428,
+      "position": 96
+    },
+    {
+      "name": "[Security Department]",
+      "permissions": "0",
+      "color": 10853532,
+      "position": 76
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 224
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 100
+    },
+    {
+      "name": "Unverified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 169
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 240
+    },
+    {
+      "name": "Verified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 29
+    },
+    {
+      "name": "[Ethics Committee]",
+      "permissions": "0",
+      "color": 1802242,
+      "position": 28
+    },
+    {
+      "name": "CLEARANCE LEVEL 2",
+      "permissions": "0",
+      "color": 9489594,
+      "position": 98
+    },
+    {
+      "name": "Verified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 33
+    },
+    {
+      "name": "[Scientific Department]",
+      "permissions": "0",
+      "color": 5005767,
+      "position": 94
+    },
+    {
+      "name": "[Internal Audit Commission]",
+      "permissions": "0",
+      "color": 7152162,
+      "position": 87
+    },
+    {
+      "name": "[FSD] Moderator",
+      "permissions": "1126451810140160",
+      "color": 3819450,
+      "position": 13
+    },
+    {
+      "name": "Studio",
+      "permissions": "0",
+      "color": 0,
+      "position": 84
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 162
+    },
+    {
+      "name": "Studio Leadership",
+      "permissions": "0",
+      "color": 2299445,
+      "position": 110
+    },
+    {
+      "name": "Studio",
+      "permissions": "0",
+      "color": 0,
+      "position": 25
+    },
+    {
+      "name": "Unverified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 149
+    },
+    {
+      "name": "The Administrator",
+      "permissions": "0",
+      "color": 2494559,
+      "position": 232
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 77
+    },
+    {
+      "name": "[FSD] Senior Moderator",
+      "permissions": "0",
+      "color": 5915635,
+      "position": 235
+    },
+    {
+      "name": "The Administrator",
+      "permissions": "0",
+      "color": 2494559,
+      "position": 245
+    },
+    {
+      "name": "Verified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 117
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 65
+    },
+    {
+      "name": "[Fire Suppression Department]",
+      "permissions": "0",
+      "color": 11027200,
+      "position": 4
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 150
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 72
+    },
+    {
+      "name": "Unverified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 119
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 215
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 62
+    },
+    {
+      "name": "[Administrative Department]",
+      "permissions": "0",
+      "color": 9022598,
+      "position": 114
+    },
+    {
+      "name": "Location Director",
+      "permissions": "0",
+      "color": 11414829,
+      "position": 221
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 14
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 216
+    },
+    {
+      "name": "[Threat Suppression Unit]",
+      "permissions": "0",
+      "color": 2565927,
+      "position": 75
+    },
+    {
+      "name": "CLEARANCE LEVEL 4",
+      "permissions": "0",
+      "color": 6515629,
+      "position": 118
+    },
+    {
+      "name": "@everyone",
+      "permissions": "2151716375350849",
+      "color": 0,
+      "position": 135
+    },
+    {
+      "name": "Lore Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 80
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 132
+    },
+    {
+      "name": "Sneaks Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 93
+    },
+    {
+      "name": "[Department of Applied Force]",
+      "permissions": "0",
+      "color": 9141880,
+      "position": 79
+    },
+    {
+      "name": "[Scientific Department]",
+      "permissions": "0",
+      "color": 5005767,
+      "position": 95
+    },
+    {
+      "name": "[Security Department]",
+      "permissions": "0",
+      "color": 10853532,
+      "position": 189
+    },
+    {
+      "name": "The Founder",
+      "permissions": "0",
+      "color": 6422783,
+      "position": 136
+    },
+    {
+      "name": "Updates Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 168
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 68
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 247
+    },
+    {
+      "name": "Unverified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 31
+    },
+    {
+      "name": "Lore Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 120
+    },
+    {
+      "name": "Engineer",
+      "permissions": "0",
+      "color": 5394428,
+      "position": 36
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 143
+    },
+    {
+      "name": "Location Director",
+      "permissions": "0",
+      "color": 11414829,
+      "position": 237
+    },
+    {
+      "name": "Updates Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 51
+    },
+    {
+      "name": "The Founder",
+      "permissions": "0",
+      "color": 6422783,
+      "position": 225
+    },
+    {
+      "name": "--NO ADDING ABOVE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 133
+    },
+    {
+      "name": "CLEARANCE LEVEL 3",
+      "permissions": "0",
+      "color": 7768751,
+      "position": 115
+    },
+    {
+      "name": "@everyone",
+      "permissions": "2151716375350849",
+      "color": 0,
+      "position": 0
+    },
+    {
+      "name": "[Internal Tribunal Department]",
+      "permissions": "0",
+      "color": 9820853,
+      "position": 202
+    },
+    {
+      "name": "--NO ADDING ABOVE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 238
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 164
+    },
+    {
+      "name": "@everyone",
+      "permissions": "2151716375350849",
+      "color": 0,
+      "position": 161
+    },
+    {
+      "name": "Location Director",
+      "permissions": "0",
+      "color": 11414829,
+      "position": 137
+    },
+    {
+      "name": "AUTOMATION",
+      "permissions": "8",
+      "color": 9164543,
+      "position": 239
+    },
+    {
+      "name": "[FSD] Moderator",
+      "permissions": "1126451810140160",
+      "color": 3819450,
+      "position": 78
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 159
+    },
+    {
+      "name": "Council Chairman",
+      "permissions": "8",
+      "color": 5574299,
+      "position": 213
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 185
+    },
+    {
+      "name": "[Internal Tribunal Department]",
+      "permissions": "0",
+      "color": 9820853,
+      "position": 46
+    },
+    {
+      "name": "@everyone",
+      "permissions": "2151716375350849",
+      "color": 0,
+      "position": 131
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 50
+    },
+    {
+      "name": "[Administrative Department]",
+      "permissions": "0",
+      "color": 9022598,
+      "position": 210
+    },
+    {
+      "name": "The Founder",
+      "permissions": "0",
+      "color": 6422783,
+      "position": 125
+    },
+    {
+      "name": "[FSD] Senior Moderator",
+      "permissions": "0",
+      "color": 5915635,
+      "position": 222
+    },
+    {
+      "name": "CLEARANCE LEVEL 4",
+      "permissions": "0",
+      "color": 6515629,
+      "position": 11
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 44
+    },
+    {
+      "name": "Sneaks Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 15
+    },
+    {
+      "name": "Community Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 97
+    },
+    {
+      "name": "[Internal Tribunal Department]",
+      "permissions": "0",
+      "color": 9820853,
+      "position": 67
+    },
+    {
+      "name": "The Founder",
+      "permissions": "0",
+      "color": 6422783,
+      "position": 246
+    },
+    {
+      "name": "Engineer",
+      "permissions": "0",
+      "color": 5394428,
+      "position": 200
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 128
+    },
+    {
+      "name": "The Founder",
+      "permissions": "0",
+      "color": 6422783,
+      "position": 37
+    },
+    {
+      "name": "Class E",
+      "permissions": "0",
+      "color": 5917732,
+      "position": 217
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 147
+    },
+    {
+      "name": "--NO ADDING ABOVE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 90
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 141
+    },
+    {
+      "name": "Admin",
+      "permissions": "8",
+      "color": 0,
+      "position": 243
+    },
+    {
+      "name": "Verified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 165
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 102
+    },
+    {
+      "name": "Lore Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 179
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 154
+    },
+    {
+      "name": "Unverified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 175
+    },
+    {
+      "name": "[FSD] Senior Moderator",
+      "permissions": "0",
+      "color": 5915635,
+      "position": 57
+    },
+    {
+      "name": "@everyone",
+      "permissions": "2151716375350849",
+      "color": 0,
+      "position": 47
+    },
+    {
+      "name": "CLEARANCE LEVEL 2",
+      "permissions": "0",
+      "color": 9489594,
+      "position": 10
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 12
+    },
+    {
+      "name": "CLEARANCE LEVEL 4",
+      "permissions": "0",
+      "color": 6515629,
+      "position": 234
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 160
+    },
+    {
+      "name": "Verified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 171
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 148
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 59
+    },
+    {
+      "name": "[Ethics Committee]",
+      "permissions": "0",
+      "color": 1802242,
+      "position": 207
+    },
+    {
+      "name": "CLEARANCE LEVEL 3",
+      "permissions": "0",
+      "color": 7768751,
+      "position": 231
+    },
+    {
+      "name": "[Administrative Department]",
+      "permissions": "0",
+      "color": 9022598,
+      "position": 192
+    },
+    {
+      "name": "Foundation Personnel",
+      "permissions": "0",
+      "color": 4415327,
+      "position": 20
+    },
+    {
+      "name": "Studio",
+      "permissions": "0",
+      "color": 0,
+      "position": 163
+    },
+    {
+      "name": "[Fire Suppression Department]",
+      "permissions": "0",
+      "color": 11027200,
+      "position": 178
+    },
+    {
+      "name": "@everyone",
+      "permissions": "2151716375350849",
+      "color": 0,
+      "position": 43
+    },
+    {
+      "name": "[Scientific Department]",
+      "permissions": "0",
+      "color": 5005767,
+      "position": 7
+    },
+    {
+      "name": "Foundation Personnel",
+      "permissions": "0",
+      "color": 4415327,
+      "position": 226
+    },
+    {
+      "name": "CLEARANCE LEVEL 1",
+      "permissions": "0",
+      "color": 10206900,
+      "position": 64
+    },
+    {
+      "name": "Studio Leadership",
+      "permissions": "0",
+      "color": 2299445,
+      "position": 201
+    },
+    {
+      "name": "Class E",
+      "permissions": "0",
+      "color": 5917732,
+      "position": 198
+    },
+    {
+      "name": "[Manufacturing Department]",
+      "permissions": "0",
+      "color": 3947214,
+      "position": 81
+    },
+    {
+      "name": "Foundation Personnel",
+      "permissions": "0",
+      "color": 4415327,
+      "position": 194
+    },
+    {
+      "name": "Community Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 167
+    },
+    {
+      "name": "Council Chairman",
+      "permissions": "8",
+      "color": 5574299,
+      "position": 244
+    },
+    {
+      "name": "Admin",
+      "permissions": "8",
+      "color": 0,
+      "position": 105
+    },
+    {
+      "name": "[Internal Audit Commission]",
+      "permissions": "0",
+      "color": 7152162,
+      "position": 86
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 71
+    },
+    {
+      "name": "Admin",
+      "permissions": "8",
+      "color": 0,
+      "position": 220
+    },
+    {
+      "name": "CLEARANCE LEVEL 3",
+      "permissions": "0",
+      "color": 7768751,
+      "position": 203
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 138
+    },
+    {
+      "name": "Sneaks Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 182
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 212
+    },
+    {
+      "name": "[FSD] Moderator",
+      "permissions": "1126451810140160",
+      "color": 3819450,
+      "position": 233
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 205
+    },
+    {
+      "name": "Council Chairman",
+      "permissions": "8",
+      "color": 5574299,
+      "position": 18
+    },
+    {
+      "name": "[Administrative Department]",
+      "permissions": "0",
+      "color": 9022598,
+      "position": 127
+    },
+    {
+      "name": "Location Director",
+      "permissions": "0",
+      "color": 11414829,
+      "position": 49
+    },
+    {
+      "name": "The Founder",
+      "permissions": "0",
+      "color": 6422783,
+      "position": 48
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 153
+    },
+    {
+      "name": "Lore Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 32
+    },
+    {
+      "name": "CLEARANCE LEVEL 3",
+      "permissions": "0",
+      "color": 7768751,
+      "position": 27
+    },
+    {
+      "name": "CLEARANCE LEVEL 4",
+      "permissions": "0",
+      "color": 6515629,
+      "position": 208
+    },
+    {
+      "name": "CLEARANCE LEVEL 2",
+      "permissions": "0",
+      "color": 9489594,
+      "position": 230
+    },
+    {
+      "name": "Community Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 177
+    },
+    {
+      "name": "Engineer",
+      "permissions": "0",
+      "color": 5394428,
+      "position": 236
+    },
+    {
+      "name": "[FSD] Senior Moderator",
+      "permissions": "0",
+      "color": 5915635,
+      "position": 38
+    },
+    {
+      "name": "[Scientific Department]",
+      "permissions": "0",
+      "color": 5005767,
+      "position": 188
+    },
+    {
+      "name": "CLEARANCE LEVEL 3",
+      "permissions": "0",
+      "color": 7768751,
+      "position": 104
+    },
+    {
+      "name": "Council Chairman",
+      "permissions": "8",
+      "color": 5574299,
+      "position": 41
+    },
+    {
+      "name": "Engineer",
+      "permissions": "0",
+      "color": 5394428,
+      "position": 8
+    },
+    {
+      "name": "[Scientific Department]",
+      "permissions": "0",
+      "color": 5005767,
+      "position": 173
+    },
+    {
+      "name": "Foundation Personnel",
+      "permissions": "0",
+      "color": 4415327,
+      "position": 108
+    },
+    {
+      "name": "Updates Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 139
+    },
+    {
+      "name": "CLEARANCE LEVEL 1",
+      "permissions": "0",
+      "color": 10206900,
+      "position": 1
+    },
+    {
+      "name": "Sneaks Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 172
+    },
+    {
+      "name": "CLEARANCE LEVEL 1",
+      "permissions": "0",
+      "color": 10206900,
+      "position": 89
+    },
+    {
+      "name": "Foundation Personnel",
+      "permissions": "0",
+      "color": 4415327,
+      "position": 23
+    },
+    {
+      "name": "[Fire Suppression Department]",
+      "permissions": "0",
+      "color": 11027200,
+      "position": 197
+    },
+    {
+      "name": "Council Chairman",
+      "permissions": "8",
+      "color": 5574299,
+      "position": 129
+    },
+    {
+      "name": "Sneaks Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 103
+    },
+    {
+      "name": "AUTOMATION",
+      "permissions": "8",
+      "color": 9164543,
+      "position": 130
+    },
+    {
+      "name": "[Manufacturing Department]",
+      "permissions": "0",
+      "color": 3947214,
+      "position": 195
+    },
+    {
+      "name": "[Scientific Department]",
+      "permissions": "0",
+      "color": 5005767,
+      "position": 6
+    },
+    {
+      "name": "Class E",
+      "permissions": "0",
+      "color": 5917732,
+      "position": 109
+    },
+    {
+      "name": "--NO ADDING ABOVE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 218
+    },
+    {
+      "name": "[Ethics Committee]",
+      "permissions": "0",
+      "color": 1802242,
+      "position": 85
+    },
+    {
+      "name": "Unverified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 61
+    },
+    {
+      "name": "--NO ADDING ABOVE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 2
+    },
+    {
+      "name": "Studio",
+      "permissions": "0",
+      "color": 0,
+      "position": 113
+    },
+    {
+      "name": "Studio Leadership",
+      "permissions": "0",
+      "color": 2299445,
+      "position": 22
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 60
+    },
+    {
+      "name": "CLEARANCE LEVEL 1",
+      "permissions": "0",
+      "color": 10206900,
+      "position": 228
+    },
+    {
+      "name": "[FSD] Senior Moderator",
+      "permissions": "0",
+      "color": 5915635,
+      "position": 126
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 66
+    },
+    {
+      "name": "Studio Leadership",
+      "permissions": "0",
+      "color": 2299445,
+      "position": 242
+    },
+    {
+      "name": "Location Director",
+      "permissions": "0",
+      "color": 11414829,
+      "position": 142
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 40
+    },
+    {
+      "name": "[Internal Audit Commission]",
+      "permissions": "0",
+      "color": 7152162,
+      "position": 214
+    },
+    {
+      "name": "Class E",
+      "permissions": "0",
+      "color": 5917732,
+      "position": 21
+    },
+    {
+      "name": "[Internal Audit Commission]",
+      "permissions": "0",
+      "color": 7152162,
+      "position": 183
+    },
+    {
+      "name": "CLEARANCE LEVEL 3",
+      "permissions": "0",
+      "color": 7768751,
+      "position": 16
+    },
+    {
+      "name": "[Security Department]",
+      "permissions": "0",
+      "color": 10853532,
+      "position": 52
+    },
+    {
+      "name": "[Manufacturing Department]",
+      "permissions": "0",
+      "color": 3947214,
+      "position": 91
+    },
+    {
+      "name": "[Ethics Committee]",
+      "permissions": "0",
+      "color": 1802242,
+      "position": 186
+    },
+    {
+      "name": "Class D",
+      "permissions": "0",
+      "color": 9595444,
+      "position": 55
+    },
+    {
+      "name": "Studio",
+      "permissions": "0",
+      "color": 0,
+      "position": 170
+    },
+    {
+      "name": "[Internal Tribunal Department]",
+      "permissions": "0",
+      "color": 9820853,
+      "position": 193
+    },
+    {
+      "name": "[Security Department]",
+      "permissions": "0",
+      "color": 10853532,
+      "position": 140
+    },
+    {
+      "name": "Updates Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 180
+    },
+    {
+      "name": "Location Director",
+      "permissions": "0",
+      "color": 11414829,
+      "position": 54
+    },
+    {
+      "name": "[Administrative Department]",
+      "permissions": "0",
+      "color": 9022598,
+      "position": 39
+    },
+    {
+      "name": "Engineer",
+      "permissions": "0",
+      "color": 5394428,
+      "position": 124
+    },
+    {
+      "name": "--NO ADDING ABOVE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 45
+    },
+    {
+      "name": "--DO NOT DISPENSE--",
+      "permissions": "0",
+      "color": 3801139,
+      "position": 53
+    },
+    {
+      "name": "[Manufacturing Department]",
+      "permissions": "0",
+      "color": 3947214,
+      "position": 176
+    },
+    {
+      "name": "CLEARANCE LEVEL 1",
+      "permissions": "0",
+      "color": 10206900,
+      "position": 152
+    },
+    {
+      "name": "AUTOMATION",
+      "permissions": "8",
+      "color": 9164543,
+      "position": 74
+    },
+    {
+      "name": "Lore Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 174
+    },
+    {
+      "name": "[Internal Tribunal Department]",
+      "permissions": "0",
+      "color": 9820853,
+      "position": 155
+    },
+    {
+      "name": "[Department of Applied Force]",
+      "permissions": "0",
+      "color": 9141880,
+      "position": 204
+    },
+    {
+      "name": "Foundation Personnel",
+      "permissions": "0",
+      "color": 4415327,
+      "position": 111
+    },
+    {
+      "name": "[FSD] Moderator",
+      "permissions": "1126451810140160",
+      "color": 3819450,
+      "position": 199
+    },
+    {
+      "name": "[Fire Suppression Department]",
+      "permissions": "0",
+      "color": 11027200,
+      "position": 24
+    },
+    {
+      "name": "CLEARANCE LEVEL 4",
+      "permissions": "0",
+      "color": 6515629,
+      "position": 99
+    },
+    {
+      "name": "Sneaks Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 5
+    },
+    {
+      "name": "CLEARANCE LEVEL 2",
+      "permissions": "0",
+      "color": 9489594,
+      "position": 151
+    },
+    {
+      "name": "AUTOMATION",
+      "permissions": "8",
+      "color": 9164543,
+      "position": 42
+    },
+    {
+      "name": "Admin",
+      "permissions": "8",
+      "color": 0,
+      "position": 17
+    },
+    {
+      "name": "[FSD] Moderator",
+      "permissions": "1126451810140160",
+      "color": 3819450,
+      "position": 101
+    },
+    {
+      "name": "CLEARANCE LEVEL 0",
+      "permissions": "0",
+      "color": 9214876,
+      "position": 158
+    },
+    {
+      "name": "[ILLUMINATI]",
+      "permissions": "8",
+      "color": 0,
+      "position": 241
+    },
+    {
+      "name": "[Manufacturing Department]",
+      "permissions": "0",
+      "color": 3947214,
+      "position": 3
+    },
+    {
+      "name": "[Fire Suppression Department]",
+      "permissions": "0",
+      "color": 11027200,
+      "position": 112
+    },
+    {
+      "name": "Overwatch Council",
+      "permissions": "2108862765203399",
+      "color": 657930,
+      "position": 69
+    },
+    {
+      "name": "The Administrator",
+      "permissions": "0",
+      "color": 2494559,
+      "position": 56
+    },
+    {
+      "name": "[Security Department]",
+      "permissions": "0",
+      "color": 10853532,
+      "position": 184
+    },
+    {
+      "name": "CLEARANCE LEVEL 4",
+      "permissions": "0",
+      "color": 6515629,
+      "position": 30
+    },
+    {
+      "name": "[Threat Suppression Unit]",
+      "permissions": "0",
+      "color": 2565927,
+      "position": 191
+    },
+    {
+      "name": "Community Ping",
+      "permissions": "0",
+      "color": 10551213,
+      "position": 19
+    },
+    {
+      "name": "Class E",
+      "permissions": "0",
+      "color": 5917732,
+      "position": 35
+    },
+    {
+      "name": "[RAISA]",
+      "permissions": "0",
+      "color": 1118481,
+      "position": 73
+    },
+    {
+      "name": "[Administrative Department]",
+      "permissions": "0",
+      "color": 9022598,
+      "position": 26
+    },
+    {
+      "name": "AUTOMATION",
+      "permissions": "8",
+      "color": 9164543,
+      "position": 219
+    },
+    {
+      "name": "[RAISA]",
+      "permissions": "0",
+      "color": 1118481,
+      "position": 211
+    },
+    {
+      "name": "The Administrator",
+      "permissions": "0",
+      "color": 2494559,
+      "position": 58
+    },
+    {
+      "name": "Verified",
+      "permissions": "0",
+      "color": 1315860,
+      "position": 121
+    }
+  ],
+  "channels": [
+    {
+      "name": "[??] RAISA TABULATION",
+      "type": 4,
+      "position": 0,
+      "parent": null,
+      "permissions": {
+        "1294605834000666705": {
+          "allow": "0",
+          "deny": "2098966421831505"
+        },
+        "1294605834021502996": {
+          "allow": "1447651005761088",
+          "deny": "651315416070417"
+        },
+        "1294605834067644431": {
+          "allow": "3072",
+          "deny": "0"
+        }
+      }
+    },
+    {
+      "name": "🔦moderator-only",
+      "type": 0,
+      "position": 0,
+      "parent": "[??] RAISA TABULATION",
+      "permissions": {
+        "1294605834000666705": {
+          "allow": "1024",
+          "deny": "2098966421830481"
+        },
+        "1294605834021502996": {
+          "allow": "1447651005761088",
+          "deny": "651315416070417"
+        },
+        "1294605834067644431": {
+          "allow": "68608",
+          "deny": "0"
+        }
+      }
+    },
+    {
+      "name": "🔦action-logs",
+      "type": 0,
+      "position": 1,
+      "parent": "[??] RAISA TABULATION",
+      "permissions": {
+        "1294605834000666705": {
+          "allow": "0",
+          "deny": "2098966421831505"
+        },
+        "1294605834021502996": {
+          "allow": "1447651005761088",
+          "deny": "651315416070417"
+        },
+        "1294605834067644431": {
+          "allow": "3072",
+          "deny": "0"
+        }
+      }
+    },
+    {
+      "name": "[*] COMMAND",
+      "type": 4,
+      "position": 1,
+      "parent": null,
+      "permissions": {
+        "1294605834000666705": {
+          "allow": "0",
+          "deny": "1049600"
+        },
+        "1294605834038546539": {
+          "allow": "3072",
+          "deny": "0"
+        },
+        "1294605834067644427": {
+          "allow": "1729521089904192",
+          "deny": "87970086519057"
+        },
+        "1294605834038546541": {
+          "allow": "3072",
+          "deny": "0"
+        },
+        "1294605834067644431": {
+          "allow": "3072",
+          "deny": "0"
+        },
+        "1294605834067644428": {
+          "allow": "2010978886995520",
+          "deny": "87987534835985"
+        }
+      }
+    },
+    {
+      "name": "discussion",
+      "type": 0,
+      "position": 0,
+      "parent": "[*] COMMAND",
+      "permissions": {
+        "1294605834000666705": {
+          "allow": "1024",
+          "deny": "1048576"
+        },
+        "1294605834038546539": {
+          "allow": "3072",
+          "deny": "0"
+        },
+        "1294605834067644427": {
+          "allow": "1729521089904192",
+          "deny": "87970086519057"
+        },
+        "1294605834038546541": {
+          "allow": "3072",
+          "deny": "0"
+        },
+        "1294605834067644431": {
+          "allow": "3072",
+          "deny": "0"
+        },
+        "1294605834067644428": {
+          "allow": "2010978886995520",
+          "deny": "87987534835985"
+        }
+      }
+    },
+    {
+      "name": "test",
+      "type": 4,
+      "position": 2,
+      "parent": null,
+      "permissions": {}
+    },
+    {
+      "name": "asdsad",
+      "type": 0,
+      "position": 2,
+      "parent": "test",
+      "permissions": {}
+    },
+    {
+      "name": "asdfdsfsdf",
+      "type": 0,
+      "position": 3,
+      "parent": "test",
+      "permissions": {}
+    },
+    {
+      "name": "logging",
+      "type": 4,
+      "position": 3,
+      "parent": null,
+      "permissions": {}
+    },
+    {
+      "name": "logging-promotions",
+      "type": 0,
+      "position": 0,
+      "parent": "logging",
+      "permissions": {}
+    },
+    {
+      "name": "asd",
+      "type": 0,
+      "position": 4,
+      "parent": "test",
+      "permissions": {}
+    },
+    {
+      "name": "bornana",
+      "type": 0,
+      "position": 0,
+      "parent": "test",
+      "permissions": {}
+    },
+    {
+      "name": "parnana",
+      "type": 0,
+      "position": 1,
+      "parent": "test",
+      "permissions": {}
+    },
+    {
+      "name": "chaos",
+      "type": 4,
+      "position": 4,
+      "parent": null,
+      "permissions": {}
+    },
+    {
+      "name": "123123",
+      "type": 0,
+      "position": 0,
+      "parent": "chaos",
+      "permissions": {}
+    },
+    {
+      "name": "dsfgfsdgfdgs",
+      "type": 0,
+      "position": 1,
+      "parent": "chaos",
+      "permissions": {}
+    },
+    {
+      "name": "asbasd",
+      "type": 0,
+      "position": 2,
+      "parent": "chaos",
+      "permissions": {}
+    },
+    {
+      "name": "213231321",
+      "type": 2,
+      "position": 0,
+      "parent": "chaos",
+      "permissions": {}
+    },
+    {
+      "name": "asdasdas",
+      "type": 0,
+      "position": 3,
+      "parent": "chaos",
+      "permissions": {}
+    },
+    {
+      "name": "brasd",
+      "type": 0,
+      "position": 4,
+      "parent": "chaos",
+      "permissions": {}
+    }
+  ]
+}
